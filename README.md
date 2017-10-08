@@ -1,15 +1,24 @@
 ## Environment
 
-Linux Mint x64
-WSO2 5.4.0-alpha2 (also tested with WSO IS 5.3)
-Java 1.8.0_03 (OpenJDK)
-Python 2.7
-Python packages (in requirements.txt)
-PIP 9.0.1
-Enable Admin ServicesWSDL [1]
+- Linux Mint x64
+
+- WSO2 5.4.0-alpha2 (also tested with WSO IS 5.3)
+
+- Java 1.8.0_03 (OpenJDK)
+
+- Python 2.7
+
+- Python packages (in requirements.txt)
+
+- PIP 9.0.1 [1]
+
+- Enable Admin ServicesWSDL [2]
 
 References:
-[1] https://docs.wso2.com/display/IS540/Entitlement+using+SOAP+Service
+
+[1] https://pip.pypa.io/en/stable/installing/
+
+[2] https://docs.wso2.com/display/IS540/Entitlement+using+SOAP+Service
 
 
 ## Install dependencies
