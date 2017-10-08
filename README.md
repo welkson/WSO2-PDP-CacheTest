@@ -35,7 +35,9 @@ pip install -U -r requirements.txt
 ~/wso2is-5.4.0-alpha2/bin/wso2server.sh --start
 ```
 
-- Delete all Policies in PAP
+- Open WSO2 Carbon web interface
+
+- Delete all Policies in PAP (Carbon web interface)
 
 - Delete all Policies in PDP
 
@@ -47,10 +49,10 @@ python wso2_test.py
 
 Policy is created in PAP/PDP, and tests with PDP is sucessfull (first test is PERMIT and second test is DENY)
 
-- Delete all Policies in PAP and PDP
+- In Carbon Delete all Policies in PAP and PDP
 
 - Repeat python tests
 
-All tests result DENY (broken)
+**All tests result DENY (broken)**
 
 
