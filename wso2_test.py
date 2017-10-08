@@ -77,7 +77,7 @@ if __name__ == '__main__':
             print u"Policy alread exists. Please see README. Aborting..."
         else:
             print u'Failed to add new policy: ' + str(e)
-            exit()
+        exit()
 
     # Test 1: Access using resource=/new_ticket (PERMIT)
     print u"""\n\n---> Test Policy [OnlyNewTicket]:
