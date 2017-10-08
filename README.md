@@ -1,3 +1,8 @@
+WSO2-PDP-CacheTest
+========
+
+This demo demonstrates problem in WSO2 PDP API (cache?).  
+
 ## Environment
 
 - Linux Mint x64
