@@ -17,6 +17,8 @@ urllib3.disable_warnings()
 # WSO2 API URL (PAP and PDP)
 wso2_pap_api = 'https://localhost:9443/services/EntitlementPolicyAdminService?wsdl'
 wso2_pdp_api = "https://localhost:9443/api/identity/entitlement/decision/pdp"
+wso2_admin_api = 'https://localhost:9443/services/EntitlementAdminService?wsdl'
+
 
 # XACML Policy Test (resource-id = /new_ticket)
 p1 = """
@@ -58,8 +60,17 @@ def xacml_request_p1(attributes):
     return xmltodict.parse(request.text)['Response']['Result']['Decision'] == u'Permit'
 
 
+def clear_cache():
+    client_admin = Client(wso2_admin_api, username="admin", password="admin")
+    client_admin.service.clearPolicyCache()
+    return
+
+
 if __name__ == '__main__':
     client = Client(wso2_pap_api, username="admin", password="admin")
+
+    # clear cache before policy manipulation
+    clear_cache()
 
     # PolicyDTO
     policyDTO = client.factory.create("ax2340:PolicyDTO")
