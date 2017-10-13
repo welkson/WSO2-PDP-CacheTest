@@ -61,3 +61,8 @@ Policy is created in PAP/PDP, and tests with PDP is sucessfull (first test is PE
 **All tests result DENY (broken)**
 
 
+# Workaround
+
+- Cleaer cache before policy manipulation
+
+- Details: _https://stackoverflow.com/questions/46626886/bug-cache-in-wso2-pdp-when-policy-is-created-via-admin-services-api
